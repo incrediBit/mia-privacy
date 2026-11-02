@@ -61,12 +61,12 @@ technically unable to transmit data off your device.</p>
 <ul>
   <li><code>CALL_PHONE</code> &mdash; used only when you tap a contact's CALL button,
       to place the call directly instead of opening the dialer.</li>
-  <li><code>READ_MEDIA_IMAGES</code> (Android 13+) / <code>READ_EXTERNAL_STORAGE</code>
-      (Android 12 and older) &mdash; used only so you can choose a photo for a contact.</li>
 </ul>
-<p>These permissions are used only for the features described above. You can deny or
-revoke them in Android Settings; photo picking and calling will then be unavailable,
-but the rest of the app keeps working.</p>
+<p>MIA requests no other permission and has no access to your photo library, files,
+contacts, messages, camera, or microphone. To choose a photo, MIA opens Android's
+built-in photo picker, where you select one picture to hand to the app; MIA never
+sees the rest of your gallery. You can revoke the call permission in Android
+Settings; calling will then be unavailable, but the rest of the app keeps working.</p>
 
 <h2>4. Collection, sharing, and selling</h2>
 <p><strong>We collect nothing and we share nothing.</strong> We do not operate a server
